@@ -52,8 +52,9 @@ html{scroll-behavior:smooth} img{max-width:100%}
 @media (max-width:700px){h1{font-size:42px !important}h2{font-size:32px !important}
  section>div,header>div,footer>div,section{padding-left:20px !important;padding-right:20px !important}
  [style*="repeat(auto-fit"],.ff-choices,.ff-grid{grid-template-columns:1fr !important}
- #partenaires-b ul{border-left:0 !important}
- #partenaires-b li{border-right:0 !important;border-bottom:1px solid #D7D9DD;padding:14px 0 !important}
+ #partenaires-b ul{border-left:0 !important;grid-template-columns:1fr !important}
+ #partenaires-b li{border-right:0 !important;border-bottom:1px solid #ECEDEF;padding:12px 0 !important}
+ #partenaires-b .pg p{flex-basis:100% !important}
  article{min-width:0}}
 </style>
 <script>
@@ -207,16 +208,28 @@ document.addEventListener('DOMContentLoaded',function(){try{var p=new URLSearchP
 </section>
 
 <section id="partenaires-b" aria-labelledby="partenaires-titre" style="border-bottom: 1px solid #D7D9DD">
-<div style="max-width: 1240px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center">
+<div style="max-width: 1240px; margin: 0 auto; padding: 80px 32px; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-start">
 <div style="flex: 0 1 300px; min-width: 0">
-<p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8C6A3F; font-weight: 600">Partenaires financiers</p>
-<h2 id="partenaires-titre" style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.2">Ils financent nos reprises</h2>
+<p style="margin: 0 0 12px; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #8C6A3F; font-weight: 600">Partenaires</p>
+<h2 id="partenaires-titre" style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.2">Ils nous accompagnent</h2>
 </div>
-<ul style="flex: 1 1 640px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-left: 1px solid #D7D9DD">
+<div style="flex: 1 1 760px; min-width: 0; border-bottom: 1px solid #D7D9DD">
+<div class="pg" style="display: flex; flex-wrap: wrap; gap: 12px 0; align-items: center; padding: 22px 0; border-top: 1px solid #D7D9DD">
+<p style="flex: 0 0 200px; margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #5B6575">Banques</p>
+<ul style="flex: 1 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid #D7D9DD">
 <li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Crédit Agricole</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Nord Est</span></li>
 <li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Banque Populaire</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Auvergne Rhône-Alpes</span></li>
 <li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Bpifrance</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Banque publique d'investissement</span></li>
 </ul>
+</div>
+<div class="pg" style="display: flex; flex-wrap: wrap; gap: 12px 0; align-items: center; padding: 22px 0; border-top: 1px solid #D7D9DD">
+<p style="flex: 0 0 200px; margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #5B6575">Conseils juridiques</p>
+<ul style="flex: 1 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid #D7D9DD">
+<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">For Perspectives</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Avocats</span></li>
+<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">K&amp;L Gates</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Avocats</span></li>
+</ul>
+</div>
+</div>
 </div>
 </section>
 
