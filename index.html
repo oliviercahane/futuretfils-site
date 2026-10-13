@@ -27,6 +27,13 @@ a{color:#13233A}a:hover{color:#0A1424}
 </style>
 <style>
 html{scroll-behavior:smooth} img{max-width:100%}
+#partenaires-b .pg{display:flex;flex-wrap:wrap;gap:12px 0;align-items:center;padding:26px 0;border-top:1px solid #D7D9DD}
+#partenaires-b .pg-l{flex:0 0 200px;margin:0;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#5B6575}
+#partenaires-b ul{flex:1 1 560px;min-width:0;margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-left:1px solid #D7D9DD}
+#partenaires-b li{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:96px;padding:8px 20px;border-right:1px solid #D7D9DD;text-align:center}
+#partenaires-b li img{max-width:170px;width:auto;object-fit:contain;filter:grayscale(1) contrast(1.1);opacity:.78;transition:filter .2s,opacity .2s}
+#partenaires-b li:hover img{filter:none;opacity:1}
+#partenaires-b li span{font-size:12px;color:#5B6575}
 .ff-form{max-width:980px}
 .ff-hidden{position:absolute;left:-9999px}
 .ff-choices{border:0;padding:0;margin:0 0 36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
@@ -52,9 +59,9 @@ html{scroll-behavior:smooth} img{max-width:100%}
 @media (max-width:700px){h1{font-size:42px !important}h2{font-size:32px !important}
  section>div,header>div,footer>div,section{padding-left:20px !important;padding-right:20px !important}
  [style*="repeat(auto-fit"],.ff-choices,.ff-grid{grid-template-columns:1fr !important}
- #partenaires-b ul{border-left:0 !important;grid-template-columns:1fr !important}
- #partenaires-b li{border-right:0 !important;border-bottom:1px solid #ECEDEF;padding:12px 0 !important}
- #partenaires-b .pg p{flex-basis:100% !important}
+ #partenaires-b ul{border-left:0 !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:8px}
+ #partenaires-b li{border-right:0 !important;padding:12px 4px !important}
+ #partenaires-b .pg-l{flex-basis:100% !important}
  article{min-width:0}}
 </style>
 <script>
@@ -214,19 +221,19 @@ document.addEventListener('DOMContentLoaded',function(){try{var p=new URLSearchP
 <h2 id="partenaires-titre" style="margin: 0; font-family: 'Libre Caslon Text', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.2">Ils nous accompagnent</h2>
 </div>
 <div style="flex: 1 1 760px; min-width: 0; border-bottom: 1px solid #D7D9DD">
-<div class="pg" style="display: flex; flex-wrap: wrap; gap: 12px 0; align-items: center; padding: 22px 0; border-top: 1px solid #D7D9DD">
-<p style="flex: 0 0 200px; margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #5B6575">Banques</p>
-<ul style="flex: 1 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid #D7D9DD">
-<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Crédit Agricole</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Nord Est</span></li>
-<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Banque Populaire</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Auvergne Rhône-Alpes</span></li>
-<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">Bpifrance</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Banque publique d'investissement</span></li>
+<div class="pg">
+<p class="pg-l">Banques</p>
+<ul>
+<li><img src="img/partenaires/creditagricole.svg" alt="Crédit Agricole Nord Est" loading="lazy" style="height: 58px"><span>Crédit Agricole Nord Est</span></li>
+<li><img src="img/partenaires/banquepopulaire.png" alt="Banque Populaire Auvergne Rhône-Alpes" loading="lazy" style="height: 40px"><span>Banque Populaire AURA</span></li>
+<li><img src="img/partenaires/bpifrance.svg" alt="Bpifrance" loading="lazy" style="height: 30px"><span>Bpifrance</span></li>
 </ul>
 </div>
-<div class="pg" style="display: flex; flex-wrap: wrap; gap: 12px 0; align-items: center; padding: 22px 0; border-top: 1px solid #D7D9DD">
-<p style="flex: 0 0 200px; margin: 0; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: #5B6575">Conseils juridiques</p>
-<ul style="flex: 1 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-left: 1px solid #D7D9DD">
-<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">For Perspectives</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Avocats</span></li>
-<li style="padding: 8px 28px; border-right: 1px solid #D7D9DD"><span style="display: block; font-family: 'Libre Caslon Text', Georgia, serif; font-size: 22px; line-height: 1.25; color: #13233A">K&amp;L Gates</span><span style="display: block; margin-top: 4px; font-size: 14px; color: #5B6575">Avocats</span></li>
+<div class="pg">
+<p class="pg-l">Conseils juridiques</p>
+<ul>
+<li><img src="img/partenaires/perspectives.svg" alt="Perspectives Avocats" loading="lazy" style="height: 20px"><span>Perspectives Avocats</span></li>
+<li><img src="img/partenaires/klgates.png" alt="K&amp;L Gates" loading="lazy" style="height: 26px"><span>K&amp;L Gates</span></li>
 </ul>
 </div>
 </div>
