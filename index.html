@@ -34,6 +34,7 @@ html{scroll-behavior:smooth} img{max-width:100%}
 #partenaires-b li img{max-width:170px;width:auto;object-fit:contain;filter:grayscale(1) contrast(1.1);opacity:.78;transition:filter .2s,opacity .2s}
 #partenaires-b li:hover img{filter:none;opacity:1}
 #partenaires-b li span{font-size:12px;color:#5B6575}
+#partenaires-b li.txt strong{font-family:'Libre Caslon Text',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;color:#13233A}
 .ff-form{max-width:980px}
 .ff-hidden{position:absolute;left:-9999px}
 .ff-choices{border:0;padding:0;margin:0 0 36px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
@@ -220,9 +221,9 @@ document.addEventListener('DOMContentLoaded',function(){try{var p=new URLSearchP
 <div class="pg">
 <p class="pg-l">Banques</p>
 <ul>
-<li><img src="img/partenaires/creditagricole.svg" alt="Crédit Agricole Nord Est" loading="lazy" style="height: 58px"><span>Crédit Agricole Nord Est</span></li>
-<li><img src="img/partenaires/banquepopulaire.png" alt="Banque Populaire Auvergne Rhône-Alpes" loading="lazy" style="height: 40px"><span>Banque Populaire AURA</span></li>
-<li><img src="img/partenaires/bpifrance.svg" alt="Bpifrance" loading="lazy" style="height: 30px"><span>Bpifrance</span></li>
+<li class="txt"><strong>Crédit Agricole</strong><span>Nord Est</span></li>
+<li class="txt"><strong>Banque Populaire</strong><span>Auvergne Rhône-Alpes</span></li>
+<li class="txt"><strong>Bpifrance</strong><span>Banque publique d'investissement</span></li>
 </ul>
 </div>
 <div class="pg">
