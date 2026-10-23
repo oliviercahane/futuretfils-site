@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /rejoindre-3cxaml.html
+Disallow: /merci.html
+Disallow: /merci-candidature.html
+
+Sitemap: https://futuretfils.com/sitemap.xml
